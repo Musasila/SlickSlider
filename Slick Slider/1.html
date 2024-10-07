@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+  </head>
+  <body>
+    <style></style>
+    <div class="slider">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./jquery/jquery-migrate.js"></script>
+    <script src="./slick/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+        });
+      });
+    </script>
+  </body>
+</html>
